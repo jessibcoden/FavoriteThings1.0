@@ -55,8 +55,6 @@ namespace FavoriteThings1._0
         }
     }
 
-
-
     class FavChild
     {
         private string _firstName;
@@ -84,7 +82,21 @@ namespace FavoriteThings1._0
                 _childAge = value;
             }
         }
+
+        //CONSTRUCTOR METHOD:
+        public FavChild(string childName)
+        {
+            _firstName = childName;
+        }
+
+        //METHOD:
+        public bool PostFavChild(string childName)
+        {
+            _firstName = childName;
+            return true;
+        }
     }
+
 
     class FavClassmate
     {
