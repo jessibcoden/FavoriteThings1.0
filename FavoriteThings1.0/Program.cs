@@ -97,7 +97,6 @@ namespace FavoriteThings1._0
         }
     }
 
-
     class FavClassmate
     {
 
@@ -125,6 +124,19 @@ namespace FavoriteThings1._0
             {
                 _classmateMaturityAge = value;
             }
+        }
+
+        //CONSTRUCTOR METHOD:
+        public FavClassmate(string classmateName)
+        {
+            _classmateName = classmateName;
+        }
+
+        //METHOD:
+        public bool PostFavClassmate(string classmateName)
+        {
+            _classmateName = classmateName;
+            return true;
         }
     }
 }
